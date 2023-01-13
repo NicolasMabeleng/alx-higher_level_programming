@@ -4,6 +4,11 @@ def square_matrix_simple(matrix=[]):
     squared = []
 
     for line in matrix:
-        squared.append([c**2 for c in line])
+        new_line = []
 
-        return squared
+        for val in line:
+            new_line.append(val ** 2)
+
+        squared.append(new_line)
+
+    return squared
